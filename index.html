@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,24 +10,49 @@
   <body>
     <!-- header -->
 
-    <header>
+    <header class="container">
       <nav>
         <a href="">Logo</a>
-        <ul>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Услуги и цены</a></li>
-          <li><a href="">Мастера</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
+        <div class="mobile-menu" data-menu>
+          <div class="content">
+            <ul class="header__nav-list">
+              <li><a href="">О нас</a></li>
+              <li><a href="">Услуги и цены</a></li>
+              <li><a href="">Мастера</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+            <ul>
+              <li>
+                <a href="tel:+380441111111">+38 044 111 11 11</a>
+              </li>
+              <li>
+                <a href="mailto:example@gmail.com">онлайн-запись</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <ul>
-        <li>
-          <a href="tel:+380441111111">+38 044 111 11 11</a>
-        </li>
-        <li>
-          <a href="mailto:example@gmail.com">онлайн-запись</a>
-        </li>
-      </ul>
+
+      <button
+        class="burger-menu__btn"
+        aria-label="Открыть меню"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg width="40" height="40">
+          <use
+            class="burger__icon--open"
+            href="images/svg/sprite.svg#icon-menu"
+          ></use>
+
+          <use
+            class="burger__icon--close"
+            href="images/svg/sprite.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
     </header>
     <main>
       <!-- hero -->
@@ -209,5 +234,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

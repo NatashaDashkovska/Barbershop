@@ -341,6 +341,14 @@ template {
   display: none;
 }
 
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 1px solid blue;
+}
+
 @font-face {
   font-family: Open Sans;
   font-style: normal;
@@ -364,5 +372,181 @@ template {
   font-weight: 700;
   font-display: swap;
   src: url("../fonts/raleway-700.woff2") format("woff2"), url("../fonts/raleway-700.woff") format("woff");
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.mobile-menu .content {
+  padding: 48px 40px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 250ms linear 250ms;
+  transition: -webkit-transform 250ms linear 250ms;
+  transition: transform 250ms linear 250ms;
+  transition: transform 250ms linear 250ms, -webkit-transform 250ms linear 250ms;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu .content {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.mobile-menu.is-open .content {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.burger-menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  border: none;
+}
+
+.burger-menu__btn:active {
+  fill: #ff6c00;
+}
+
+@media (min-width: 768px) {
+  .burger-menu__btn {
+    display: none;
+  }
+}
+
+.burger-menu__btn.is-open .burger__icon--open {
+  display: block;
+}
+
+.burger-menu__btn.is-open .burger__icon--close {
+  display: none;
+}
+
+.burger-menu__btn .burger__icon--open {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */

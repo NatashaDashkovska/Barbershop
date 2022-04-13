@@ -349,3 +349,10 @@ template {
 [hidden] {
   display: none;
 }
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  outline: 1px solid blue;
+}
