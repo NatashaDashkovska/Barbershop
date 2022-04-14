@@ -346,7 +346,6 @@ template {
 ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid blue;
 }
 
 @font-face {
@@ -457,8 +456,8 @@ img {
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 337px;
   height: 100%;
   z-index: 900;
   opacity: 0;
@@ -484,13 +483,13 @@ img {
 }
 
 .mobile-menu .content {
-  padding: 48px 40px;
+  padding: 118px 40px;
   height: 100%;
   width: 100%;
   text-align: center;
   background-color: #ffffff;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms linear 250ms;
   transition: -webkit-transform 250ms linear 250ms;
   transition: transform 250ms linear 250ms;
@@ -515,8 +514,8 @@ img {
 
 .burger-menu__btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 48px;
+  right: 31px;
   width: 40px;
   height: 40px;
   z-index: 999;
@@ -548,5 +547,75 @@ img {
 
 .burger-menu__btn .burger__icon--open {
   display: none;
+}
+
+.header__nav-item {
+  text-align: start;
+}
+
+.header__nav-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.header__nav-item > a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  color: #303030;
+}
+
+.header__nav-item:hover > a,
+.header__nav-item:focus > a {
+  color: #ff6c00;
+}
+
+.header__links-list {
+  margin-top: 64px;
+}
+
+.header__link {
+  text-align: start;
+}
+
+.header__link:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.header__link:not(:last-child) > a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.header__link:not(:last-child):hover > a,
+.header__link:not(:last-child):focus > a {
+  color: #ff6c00;
+}
+
+.header__link:last-child {
+  padding: 12px 37px;
+  text-align: center;
+  border: 1px solid #ff6c00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.header__link:last-child > a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.hero {
+  background-image: url("../../images/hero/hero-1-480.jpg");
+  height: 580px;
 }
 /*# sourceMappingURL=index.css.map */
