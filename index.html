@@ -15,7 +15,7 @@
         <a href="/" class="header__logo">
           <img class="header__logo-img" src="./images/svg/logo.svg" alt="" />
         </a>
-        <div class="mobile-menu is-open" data-menu>
+        <div class="mobile-menu" data-menu>
           <div class="content">
             <ul class="header__nav-list">
               <li class="header__nav-item">
@@ -39,12 +39,13 @@
                 <a href="mailto:example@gmail.com">онлайн-запись</a>
               </li>
             </ul>
-            <div>
-              <ul>
-                <li>
+            <div class="header__social-block">
+              <span class="header__social-links--span"></span>
+              <ul class="header__social-links-list">
+                <li class="header__social-link">
                   <a href="">Instagram</a>
                 </li>
-                <li>
+                <li class="header__social-link">
                   <a href="">Youtube</a>
                 </li>
               </ul>
@@ -63,21 +64,20 @@
       >
         <svg width="40" height="40">
           <use
-            class="burger__icon--open"
-            href="images/svg/sprite.svg#icon-menu"
-          ></use>
-
-          <use
             class="burger__icon--close"
             href="images/svg/sprite.svg#icon-close"
+          ></use>
+          <use
+            class="burger__icon--open"
+            href="images/svg/sprite.svg#icon-menu"
           ></use>
         </svg>
       </button>
     </header>
     <main>
       <!-- hero -->
-      <section class="container hero">
-        <div>
+      <section class="hero">
+        <div class="container">
           <p>A hair salon for men in Kyiv</p>
           <h1>BarberShop</h1>
           <p>

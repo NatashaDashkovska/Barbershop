@@ -523,7 +523,7 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
 }
 
@@ -537,15 +537,15 @@ img {
   }
 }
 
-.burger-menu__btn.is-open .burger__icon--open {
+.burger-menu__btn.is-open .burger__icon--close {
   display: block;
 }
 
-.burger-menu__btn.is-open .burger__icon--close {
+.burger-menu__btn.is-open .burger__icon--open {
   display: none;
 }
 
-.burger-menu__btn .burger__icon--open {
+.burger-menu__btn .burger__icon--close {
   display: none;
 }
 
@@ -612,6 +612,48 @@ img {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #303030;
+}
+
+.header__link:last-child:hover > a,
+.header__link:last-child:focus > a {
+  color: #ffffff;
+}
+
+.header__link:last-child:hover, .header__link:last-child:focus {
+  background-color: #ff6c00;
+}
+
+.header__social-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+}
+
+.header__social-link:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.header__social-link > a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.header__social-link:hover > a,
+.header__social-link:focus > a {
+  color: #ff6c00;
+}
+
+.header__social-links--span {
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+  margin-top: 9px;
+  display: block;
+  border-bottom: 1px solid #303030;
 }
 
 .hero {

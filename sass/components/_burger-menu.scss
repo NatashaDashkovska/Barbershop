@@ -59,7 +59,7 @@
 
   display: inline-flex;
 
-  background-color: $primary-light-colour;
+  background-color: transparent;
   border: none;
 
   &:active {
@@ -71,14 +71,14 @@
   }
 }
 
-.burger-menu__btn.is-open .burger__icon--open {
+.burger-menu__btn.is-open .burger__icon--close {
   display: block;
 }
 
-.burger-menu__btn.is-open .burger__icon--close {
+.burger-menu__btn.is-open .burger__icon--open {
   display: none;
 }
 
-.burger-menu__btn .burger__icon--open {
+.burger-menu__btn .burger__icon--close {
   display: none;
 }
