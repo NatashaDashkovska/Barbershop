@@ -549,6 +549,12 @@ img {
   display: none;
 }
 
+.header__logo {
+  position: absolute;
+  top: 40px;
+  left: 31px;
+}
+
 .header__nav-item {
   text-align: start;
 }
@@ -624,10 +630,10 @@ img {
 }
 
 .header__social-block {
+  margin-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 64px;
 }
 
 .header__social-link:not(:last-child) {
@@ -659,5 +665,6 @@ img {
 .hero {
   background-image: url("../../images/hero/hero-1-480.jpg");
   height: 580px;
+  padding: 280px 31px 183px;
 }
 /*# sourceMappingURL=index.css.map */
