@@ -6,6 +6,10 @@
 @import './base/common';
 @import './base/container';
 
+@import './components/light-button';
+@import './components/dark-button';
+
 @import './components/burger-menu';
 @import './layots/header';
 @import './layots/hero';
+@import './layots/about-us';

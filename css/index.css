@@ -346,6 +346,7 @@ template {
 ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid blue;
 }
 
 @font-face {
@@ -451,6 +452,53 @@ img {
     padding-left: 55px;
     padding-right: 55px;
   }
+}
+
+.button--light {
+  padding: 12px 37px;
+  text-align: center;
+  border: 1px solid #ff6c00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.button--light:hover, .button--light:focus {
+  background-color: #ff6c00;
+  color: #ffffff;
+}
+
+.button--dark {
+  padding: 12px 37px;
+  text-align: center;
+  border: 1px solid #ff6c00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.button--dark > a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.button--dark:hover > a,
+.button--dark:focus > a {
+  color: #ffffff;
+}
+
+.button--dark:hover, .button--dark:focus {
+  background-color: #ff6c00;
 }
 
 .mobile-menu {
@@ -659,7 +707,7 @@ img {
   margin-right: 40px;
   margin-top: 9px;
   display: block;
-  border-bottom: 1px solid #303030;
+  background-color: #303030;
 }
 
 .hero {
@@ -668,7 +716,7 @@ img {
   background-image: linear-gradient(to top, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../../images/hero/hero-3-480.jpg");
   background-color: rgba(25, 28, 38, 0.2);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   padding: 208px 31px 183px;
 }
 
@@ -696,7 +744,7 @@ img {
   display: block;
   width: 60px;
   height: 1px;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+  background-color: rgba(157, 164, 189, 0.6);
 }
 
 .hero__title {
@@ -718,5 +766,61 @@ img {
   line-height: 1.62;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.info {
+  padding: 84px 31px;
+}
+
+.info__title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info__title--span {
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  display: block;
+  background-color: #303030;
+}
+
+.info__main-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.info__title {
+  margin-top: 20px;
+  max-width: 330px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.info__text {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.info__texts-list > li:last-child > .info__text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.86;
 }
 /*# sourceMappingURL=index.css.map */
