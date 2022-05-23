@@ -981,5 +981,77 @@ img {
 
 .masters {
   background-color: #f7f7f7;
+  padding: 84px 31px;
+}
+
+.masters__list {
+  margin-top: 44px;
+}
+
+.masters__item {
+  text-align: center;
+}
+
+.masters__item:not(:first-child) {
+  margin-top: 64px;
+}
+
+.masters__name {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters__mark {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.masters__links {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.masters__link {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.masters__link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.masters__link:hover .icon-link,
+.masters__link:focus .icon-link {
+  fill: #ff6c00;
+}
+
+.icon-link {
+  width: 20px;
+  height: 20px;
 }
 /*# sourceMappingURL=index.css.map */

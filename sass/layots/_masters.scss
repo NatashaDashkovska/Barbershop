@@ -1,3 +1,73 @@
 .masters {
   background-color: #f7f7f7;
+  padding: 84px 31px;
+}
+
+.masters__list {
+  margin-top: 44px;
+}
+
+.masters__item {
+  text-align: center;
+  &:not(:first-child) {
+    margin-top: 64px;
+  }
+}
+
+.masters__name {
+  margin-top: 30px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+
+  letter-spacing: 0.02em;
+
+  color: $primary-dark-colour;
+}
+
+.masters__mark {
+  margin-top: 8px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+
+  letter-spacing: 0.02em;
+
+  color: $accent-colour;
+}
+
+.masters__links {
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.masters__link {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: $primary-light-colour;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover .icon-link,
+  &:focus .icon-link {
+    fill: $accent-colour;
+  }
+}
+
+.icon-link {
+  width: 20px;
+  height: 20px;
 }
