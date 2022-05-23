@@ -1054,4 +1054,20 @@ img {
   width: 20px;
   height: 20px;
 }
+
+.portfolio {
+  padding: 84px 31px;
+}
+
+.portfolio__list {
+  margin-top: 44px;
+}
+
+.portfolio__image {
+  display: block;
+}
+
+.portfolio__image:not(:last-child) {
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=index.css.map */
