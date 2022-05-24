@@ -1,0 +1,46 @@
+.form-container {
+  padding: 84px 31px;
+}
+
+.form-title {
+  margin-bottom: 44px;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: $primary-light-colour;
+}
+
+.form-input {
+  width: 100%;
+  margin-bottom: 44px;
+  padding-bottom: 8px;
+  background-color: #191c26;
+  border: none;
+  border-bottom: 1px solid $grey-colour;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $primary-light-colour;
+  cursor: pointer;
+
+  &:focus-within,
+  &:focus-visible {
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid $primary-light-colour;
+  }
+
+  &:nth-last-child(2) {
+    padding-bottom: 60px;
+  }
+}
