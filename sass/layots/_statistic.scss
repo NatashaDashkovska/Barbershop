@@ -28,6 +28,11 @@
 
   background-color: #f7f7f7;
 
+  @media screen and (max-width: 479px) {
+    width: 135px;
+    height: 133px;
+  }
+
   &:nth-child(2n) {
     margin-left: 30px;
     margin-top: 35px;
@@ -44,6 +49,14 @@
   letter-spacing: 0.05em;
 
   color: $primary-dark-colour;
+
+  @media screen and (max-width: 479px) {
+    margin-right: 0px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.6;
+  }
 }
 
 .plus-icon {
@@ -58,6 +71,13 @@
   line-height: 1.37;
 
   color: $accent-colour;
+
+  @media screen and (max-width: 479px) {
+    bottom: 14px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.37;
+  }
 }
 
 .caption {
@@ -67,4 +87,10 @@
   text-align: center;
 
   color: $primary-dark-colour;
+
+  @media screen and (max-width: 479px) {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.36;
+  }
 }
