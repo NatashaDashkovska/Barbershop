@@ -780,8 +780,8 @@ img {
 
 .hero {
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("images/hero/hero-3-480.jpg");
-  background-image: linear-gradient(to top, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("images/hero/hero-3-480.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("../../images/hero/hero-2-768@2x.jpg");
+  background-image: linear-gradient(to top, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../../images/hero/hero-2-768@2x.jpg");
   background-color: rgba(25, 28, 38, 0.2);
   background-position: center;
   background-size: cover;
