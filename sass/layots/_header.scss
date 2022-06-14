@@ -1,7 +1,30 @@
+.header {
+  @include for-size(tablet){
+    position: absolute;
+  }
+}
+
+.nav {
+  @include for-size(tablet) {
+    display: flex;
+  }
+}
+
+
+
 .header__logo {
   position: absolute;
   top: 40px;
   left: 31px;
+  @include for-size(tablet) {
+    position: static;
+  }
+}
+
+.header__nav-list {
+  @include for-size(tablet) {
+    display: flex;
+  }
 }
 
 .header__nav-item {
@@ -17,16 +40,30 @@
     line-height: 1.39;
     letter-spacing: 0.1em;
     color: $primary-dark-colour;
+    @include for-size(tablet) {
+      
+      font-size: 12px;
+      line-height: 1.33;
+      color: $primary-light-colour;
+    }
   }
 
   &:hover > a,
   &:focus > a {
     color: $accent-colour;
   }
+
+  @include for-size(tablet) {
+    // position: relative;
+  }
 }
 
 .header__links-list {
   margin-top: 64px;
+
+  @include for-size(tablet) {
+    margin-top: 0;
+  }
 }
 
 .header__link {
@@ -42,6 +79,15 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: $primary-dark-colour;
+
+      @include for-size(tablet) {
+
+        font-size: 12px;
+        line-height: 1.33;
+  
+        
+        color: $primary-light-colour;
+          }
     }
 
     &:hover > a,
@@ -78,12 +124,21 @@
       background-color: $accent-colour;
     }
   }
+
+
 }
 
 .header__social-block {
   margin-top: 64px;
 
   display: flex;
+
+  outline: 1px solid red;
+
+  @include for-size(tablet) {
+  display: none;
+ 
+  }
 }
 
 .header__social-link {
